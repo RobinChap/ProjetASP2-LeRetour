@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@ViewData["Title"] - WebApplication4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" lang="en" content="ADD SITE DESCRIPTION">
+    <meta name="author" content="ADD AUTHOR INFORMATION">
+    <meta name="robots" content="index, follow">
+
+    <!-- icons -->
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png"
+          >
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Bootstrap Core CSS file -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Override CSS file - add your own CSS rules -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/styles.css">
+
+    <!-- Conditional comment containing JS files for IE6 - 8 -->
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container-fluid">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">InventionByWhoman</a>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Students" asp-action="Index">Liste Users</a></li>
+                    <li><a asp-area="" asp-controller="Articles" asp-action="Index">Liste Articles</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- /.navbar -->
+
+    @RenderBody()
+
+    <hr>
+    <footer class="margin-tb-3">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Inventions by Women 2018</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- /.container-fluid -->
+    <!-- JQuery scripts -->
+    <script src="assets/js/jquery-1.11.2.min.js"></script>
+
+    <!-- Bootstrap Core scripts -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
